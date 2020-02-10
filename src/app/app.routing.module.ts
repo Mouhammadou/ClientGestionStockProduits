@@ -6,7 +6,7 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 
 export const appRoutes : Routes = [
   {path : 'produit', component : ProduitComponent},
-  {path : 'dashboard', component : DashboardComponent}
+  {path : 'dashboard', component : DashboardComponent},
   {path : '', redirectTo : 'dashboard', pathMatch : 'full'}
 ];
 
