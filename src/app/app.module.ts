@@ -10,6 +10,8 @@ import {Produit} from './shared/produit';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule } from "./app.routing.module";
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { ContentComponent } from './content/content.component';
     ProduitComponent,
     NavbarComponent,
     SidebarComponent,
-    ContentComponent
+    ContentComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ProduitMockService],
   bootstrap: [AppComponent]
